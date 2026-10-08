@@ -3,44 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <title>Game Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-    <header>
-        <h1>
-            <i class="fa fa-gamepad"></i> FunGame Zone
-        </h1>
+    <nav>
+        <h1>GameHub</h1>
+        <input id="search" type="text" placeholder="Search Games...">
+    </nav>
 
-        <nav>
-            <a href="index.html">
-                <i class="fa fa-home"></i> Home
-            </a>
-
-
-            <a href="play.html">
-                <i class="fa fa-play"></i> Play
-            </a>
-
-            <a href="earn.html">
-                <i class="fa fa-money-check-dollar"></i> Earn
-            </a>
-        </nav>
+    <header class="hero">
+        <h2>Play Premium HTML5 Games</h2>
+        <p>Instant Play, No Downloads, Powered By GameMontize Feed</p>
     </header>
+    <section class="categories">
+        <button onclick="filterCategory('All')">All</button>
+        <button onclick="filterCategory('Racing')">Racing</button>
+        <button onclick="filterCategory('Puzzles')">Puzzles</button>
+        <button onclick="filterCategory('Arcade')">Arcade</button>
+        <button onclick="filterCategory('Shooting')">Shooting</button>
+        <button onclick="filterCategory('Soccer')">Soccer</button>
+    </section>
+    <main id="gameContainer" class="grid"></main>
 
-
-    <main>
-        <h2>
-            <i class="fa fa-list"></i> Choose a Game
-        </h2>
-
-        <div class="game-grid">
-            <div class="game-card">
-                <i class="fa fa-staff-snake"></i>
-                <h3>Snake</h3>
-            </div>
-        </div>
-    </main>
+    <script src="app.js"></script>
 </body>
 </html>
